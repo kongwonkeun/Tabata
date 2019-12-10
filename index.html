@@ -1,0 +1,57 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="tabata.css">
+    <script>
+        let W_speed = 0;
+        let W_dir = 0;
+        let W_fr = 0;
+    </script>
+    <script src="jquery.min.js"></script>
+    <script src="tabata.js"></script>
+</head>
+<body>
+    <div class="tabata">
+        <div class="timer">00:00.00</div>
+        <div class="info-holder">
+            <div class="info">
+                <div class="info-box">
+                    <div class="info-title">ROUND</div>
+                    <div class="info-value round-value">0</div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="info-box">
+                    <div class="info-title">STATE</div>
+                    <div class="info-value-state state-value">REST</div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="info-box">
+                    <div class="info-title">SPEED</div>
+                    <div class="info-value speed-value">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="cntl-holder">
+            <div class="cntl">
+                <div class="cntl-box">
+                    <span class="cntl-label">Rounds:</span>
+                    <input class="cntl-input input-rounds" value="8"></input>
+                </div>
+                <div class="cntl-box">
+                    <span class="cntl-label">Work Time:</span>
+                    <input class="cntl-input input-work" value="20"></input>
+                </div>
+                <div class="cntl-box">
+                    <span class="cntl-label">Rest Time:</span>
+                    <input class="cntl-input input-rest" value="10"></input>
+                </div>
+            </div>
+            <div class="cntl-x">
+                <input type="button" class="cntl-button cntl-start-stop" value="START"/>
+            </div>
+        </div>
+    </div>
+    <div id="krlog"></div>
+</body>
+</html>
